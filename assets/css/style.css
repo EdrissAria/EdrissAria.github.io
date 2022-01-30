@@ -2,9 +2,11 @@
 @font-face {
     font-family: 'roboto';
     font-family: 'Roboto-Bold';
+    font-family: 'Roboto-Black';
     font-family: 'Roboto-Light';
-    src: url(../../fonts/roboto-mono/RobotoMono-Light.ttf);
+    src: url(../../fonts/roboto/Roboto-Regular.ttf);
     src: url(../../fonts/roboto/Roboto-Bold.ttf);
+    src: url(../../fonts/roboto/Roboto-Black.ttf);
     src: url(../../fonts/roboto/Roboto-Light.ttf);
 }
 /* font classes */
@@ -24,7 +26,9 @@
     box-sizing: border-box;
     outline: none;
 }
-
+body{
+    background-color: rgb(45, 45, 60);
+}
 /*________________________________________________ HEADER ______________________________________*/
 header{
     width: 100%;
@@ -47,7 +51,7 @@ nav ul li a{
     overflow: hidden;
     transition: 0.2s;
 }
-a:hover{
+nav ul li a:hover{
     color: #255784; 
     background: #2196f3; 
     box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3; 
@@ -127,14 +131,92 @@ nav ul li a:hover span:nth-child(4){
     color:rgb(240, 240, 240);
     margin-top: 1rem;
 }
-.master-button{
-    font-size: 20;
+.btn{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 155px;
+    height: 50px;
+    margin-top: 20px;
+}
+.btn a{
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    color: #fff; 
+    z-index: 1; 
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s; 
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: 'Roboto-Light';
+    backdrop-filter: blur(10px);
+}
+.btn:hover a{
+    letter-spacing: 4px;
+}
+.btn a::before{
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 50%; 
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+    transform: skewX(45deg) translateX(0);
+    transition: 0.5s;
+}
+.btn:hover a::before{
+   transform: skewX(45deg) translateX(200%); 
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 10px;
+    background: rgb(62, 183, 253);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.btn:hover::before{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+}
+/*________________________________________________ ABOUT ______________________________________*/
+.about{
+    width: 100%;
+    text-align: center;
+}
+.title{
+    font-size: 46pt;
     font-family: 'Roboto-Light';
     font-weight: 600;
-    letter-spacing: 2px;
-    border: 1px solid wheat;
-    padding: 10px 30px; 
-    color: wheat;
-    margin-top: 2rem;
-    align-self: center; 
+    color:rgba(246, 246, 246, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-top: 1rem;
 }
+.my-image{
+    width: 20%;
+    display: flex;
+    align-self: center;
+    border-radius: 50%;
+} 
