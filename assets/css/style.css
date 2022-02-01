@@ -27,7 +27,11 @@
     outline: none;
 }
 body{
-    background-color: rgb(45, 45, 60);
+    background-color: rgb(34, 34, 58);
+}
+.container{
+    width: 80%; 
+    margin: 0 auto; 
 }
 /*________________________________________________ HEADER ______________________________________*/
 header{
@@ -203,20 +207,38 @@ nav ul li a:hover span:nth-child(4){
 /*________________________________________________ ABOUT ______________________________________*/
 .about{
     width: 100%;
-    text-align: center;
 }
 .title{
-    font-size: 46pt;
+    font-size: 36pt;
     font-family: 'Roboto-Light';
     font-weight: 600;
+    text-align: center;
     color:rgba(246, 246, 246, 0.7);
     text-transform: uppercase;
     letter-spacing: 6px;
-    margin-top: 1rem;
+    margin: 1rem 0;
 }
 .my-image{
-    width: 20%;
-    display: flex;
-    align-self: center;
-    border-radius: 50%;
-} 
+    display: inline-block;
+    width: 26%;
+    border-radius: 3px;
+    margin-right: 1rem;
+}
+.about-text h3{
+    font-size: 2.4rem;
+    font-family: 'Roboto-Light';
+    font-weight: 500;
+    color: rgb(167, 167, 212);
+}
+.about-text p{
+    font-size: 1.4rem;
+    font-family: 'Roboto-Light';
+    line-height: 2.2rem;
+    color: rgb(209, 209, 209);
+    margin-top: 1rem;
+    letter-spacing: 2px;
+}
+.myname{
+    font-weight: 600;
+    color:rgb(41, 150, 223);
+}
