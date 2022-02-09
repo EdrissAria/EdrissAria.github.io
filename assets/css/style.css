@@ -130,7 +130,7 @@ nav ul li a:hover span:nth-child(4){
     text-transform: uppercase;
     letter-spacing: 3px;
 }
-.text{
+.mystery{
     font-size: 18;
     font-family: 'Roboto-Light';
     font-weight: 500;
@@ -340,6 +340,7 @@ nav ul li a:hover span:nth-child(4){
 }
 .text {
     position: relative;
+    top: 1rem;
     font-family: 'Roboto-Light';
     color: #777; 
     font-weight: 700;
@@ -390,10 +391,123 @@ svg circle:nth-child(2){
     stroke-dashoffset: calc(440 - (440 * 78)/100);
     stroke: rgb(255, 251, 21)
 }
+.skills h3{
+    position: relative;
+    font-size: 30pt;
+    font-family: 'Roboto-Light';
+    font-weight: 600;
+    color:rgb(113, 147, 209);  
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+ 
+.skills h3::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    height: 1px;
+    background: linear-gradient(270deg, rgb(42, 50, 163), #2196f3);
+    transition: 0.5s;
+}
+.skills .frame{
+    position: relative;
+    display: flex;
+    margin: 20px 0;
+    padding: 24px 10px 18px;
+    background: transparent;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+    transition: 0.5s;
+}
+.skills .frame::before{
+    content: '';
+    position: absolute;
+    top: 0;  
+    left: 0; 
+    width: 100%; 
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 10;
+}
+.skills .frame:hover{
+    transform: scale(1.01);
+}
+.skills .name{
+    position: relative;
+    width: 130px;
+    font-family: 'Roboto-Light';
+    letter-spacing: 2px;
+    text-align: right;
+    color: #fff; 
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+.skills .value{
+    position: relative;
+    width: 40px;
+    text-align: left;
+    color: #fff; 
+    margin-top: -2px; 
+    text-transform: uppercase;
+}
+.skills .percentage{
+    position: relative;
+    width: calc(100% - 150px);
+    height: 20px;
+    margin: 0 10px; 
+    border-radius: 10px;
+    background: #151515;
+    box-shadow: inset 0 0 10px #000;
+    overflow: hidden;
+}
+.skills .percentage .progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: inset 0 0 2px #000;
+    animation: animate 2s ease-in-out forwards; 
 
-
-
-
+}
+@keyframes animate {
+    from {width: 0;}
+}
+.frame:nth-child(1) .percentage .progress{
+    background: linear-gradient(45deg, #1fe6ff, #673ab7);
+}
+.frame:nth-child(2) .percentage .progress{
+    background: linear-gradient(45deg, #1fe6ff, #673ab7);
+}
+.frame:nth-child(3) .percentage .progress{
+    background: linear-gradient(45deg, #1fe6ff, #673ab7);
+}
+.frame:nth-child(4) .percentage .progress{
+    background: linear-gradient(45deg, #1fe6ff, #673ab7);
+}
+.frame:nth-child(5) .percentage .progress{
+    background: linear-gradient(45deg, #1fe6ff, #673ab7);
+}
+.frame:nth-child(6) .percentage .progress{
+    background: linear-gradient(45deg, #1fe6ff, #673ab7);
+}
+.frame:nth-child(7) .percentage .progress{
+    background: linear-gradient(45deg, #1fe6ff, #673ab7);
+}
+.frame:nth-child(8) .percentage .progress{
+    background: linear-gradient(45deg, #1fe6ff, #673ab7);
+}
+.frame:nth-child(9) .percentage .progress{
+    background: linear-gradient(45deg, #1fe6ff, #673ab7);
+}
+.frame:nth-child(10) .percentage .progress{
+    background: linear-gradient(45deg, #c3cbcc, #673ab7);
+}
 /*________________________________________________ PROJECTS ______________________________________*/
 
 /*________________________________________________ CONTACT ______________________________________*/
