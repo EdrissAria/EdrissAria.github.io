@@ -41,6 +41,9 @@ header{
     background-size: cover;
     background-attachment: fixed;
 }
+
+/* main nav */
+
 nav ul li a{
     position: relative;
     display: inline-block;
@@ -117,6 +120,24 @@ nav ul li a:hover span:nth-child(4){
     border-radius: 50%;
     background: transparent linear-gradient(109deg, #324b80 0%, #1a1544 100%) 0% 0% no-repeat padding-box;
 }
+
+/* sticky nav */
+
+.sticky{
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    background-color: rgba(18, 19, 39, 0.685);
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.sticky ul li a{
+    padding: 8px 22px;
+    color: #1395ff; 
+}
+
 .master-box{
     position: absolute;
     top: 50%;
@@ -612,8 +633,7 @@ svg circle:nth-child(2){
     padding: 10px;
 }
 .projects .box:hover .content{
-    left: -25px; 
-    padding: 60px 40px;
+    transform: scale(1.05);
 }
 .projects .box .content .text-content h2{
     font-size: 1.8em;
