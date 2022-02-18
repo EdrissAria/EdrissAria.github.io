@@ -30,7 +30,10 @@ body{
     background-color: rgb(34, 34, 58);
     overflow-x:hidden;
 }
- 
+.container{
+    width: 80%; 
+    margin: 0 auto;
+}
 /*________________________________________________ HEADER ______________________________________*/
 header{
     width: 100%;
@@ -39,13 +42,27 @@ header{
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
-
+nav {
+    display: flex;
+    justify-content: space-between;
+}
 /* main nav */
-
-nav ul li a{
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.8rem;
+    margin-right: 1rem;
+}
+.main-nav li{
+    list-style: none;
+}
+.main-nav li a{
     position: relative;
+    font-size: 20px;
+    font-family: 'Roboto-Light';
+    font-weight: 600;
+    text-decoration: none;
     display: inline-block;
     padding: 10px 22px;
     color: #2196f3; 
@@ -56,66 +73,66 @@ nav ul li a{
     overflow: hidden;
     transition: 0.2s;
 }
-nav ul li a:hover{
+.main-nav li a:hover{
     color: #255784; 
     background: #2196f3; 
     box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3; 
     transition-delay: 1s;
 }
-nav ul li a span{
+.main-nav li a span{
     position: absolute;
     display: block;
 }
-nav ul li a span:nth-child(1){
+.main-nav li a span:nth-child(1){
     top: 0; 
     left: -100%; 
     width: 100%;
     height: 2px;
     background: linear-gradient(90deg, transparent, #2196f3);
 }
-nav ul li a:hover span:nth-child(1){
+.main-nav li a:hover span:nth-child(1){
     left: 100%; 
     transition: 1s;
 }
-nav ul li a span:nth-child(3){
+.main-nav li a span:nth-child(3){
     bottom: 0; 
     right: -100%; 
     width: 100%;
     height: 2px;
     background: linear-gradient(270deg, transparent, #2196f3);
 }
-nav ul li a:hover span:nth-child(3){
+.main-nav li a:hover span:nth-child(3){
     right: 100%; 
     transition: 1s;
     transition-delay: 0.5s;
 }
-nav ul li a span:nth-child(2){
+.main-nav li a span:nth-child(2){
     top: -100%; 
     right: 0; 
     height: 100%;
     width: 2px;
     background: linear-gradient(180deg, transparent, #2196f3);
 }
-nav ul li a:hover span:nth-child(2){
+.main-nav li a:hover span:nth-child(2){
     top: 100%; 
     transition: 1s;
     transition-delay: 0.25s;
 }
-nav ul li a span:nth-child(4){
+.main-nav li a span:nth-child(4){
     bottom: -100%; 
     left: 0; 
     height: 100%;
     width: 2px;
     background: linear-gradient(180deg, transparent, #2196f3);
 }
-nav ul li a:hover span:nth-child(4){
+.main-nav li a:hover span:nth-child(4){
     bottom: 100%; 
     transition: 1s;
     transition-delay: 0.75s;
 }
 .logo{
     width: 2.6rem;
-    margin-top: 1rem;
+    margin-top: 0.6rem;
     margin-left: 1.4rem;
     border-radius: 50%;
     background: transparent linear-gradient(109deg, #324b80 0%, #1a1544 100%) 0% 0% no-repeat padding-box;
@@ -125,11 +142,11 @@ nav ul li a:hover span:nth-child(4){
 
 .sticky{
     position: fixed;
-    top: 0; 
     left: 0; 
+    top: 0; 
     width: 100%;
     background-color: rgba(18, 19, 39, 0.685);
-    z-index: 1000;
+    z-index: 9999;
     backdrop-filter: blur(5px);
 }
 
@@ -147,6 +164,7 @@ nav ul li a:hover span:nth-child(4){
 }
 .master-text{
     font-size: 40pt; 
+    font-family: 'Roboto-Light';
     font-weight: 600;
     color: rgb(243, 243, 243);
     text-transform: uppercase;
@@ -243,7 +261,7 @@ nav ul li a:hover span:nth-child(4){
     color:rgb(165, 168, 189);
     text-transform: uppercase;
     letter-spacing: 6px;
-    margin: 1rem 0;
+    margin: 1rem 0;   
 }
 .title::after{
     content: '';
@@ -282,7 +300,7 @@ nav ul li a:hover span:nth-child(4){
     font-family: 'Roboto-Light';
     line-height: 2.2rem;
     color: rgb(209, 209, 209);
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
     letter-spacing: 2px;
 }
 .myname{
@@ -295,11 +313,11 @@ nav ul li a:hover span:nth-child(4){
 }
 .card{
     position: relative;
-    width: 250px;
+    width: 230px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 270px;
     border-radius: 4px;
     text-align: center;
     overflow: hidden;
@@ -308,7 +326,6 @@ nav ul li a:hover span:nth-child(4){
     backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
-
 .card:hover{
     transform: translateY(-10px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0, 0.5);
@@ -531,7 +548,6 @@ svg circle:nth-child(2){
     background: linear-gradient(45deg, #c3cbcc, #673ab7);
 }
 /*________________________________________________ PROJECTS ______________________________________*/
-
 .projects .box{
     position: relative;
     width: 360px;
