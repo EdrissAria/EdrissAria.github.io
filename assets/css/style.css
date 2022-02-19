@@ -412,7 +412,7 @@ svg circle:nth-child(2){
 }
 .card:nth-child(1) svg circle:nth-child(2){
     stroke-dashoffset: calc(440 - (440 * 92)/100);
-    stroke: #ff1a12
+    stroke: #ff1a12; 
 }
 .card:nth-child(2) svg circle:nth-child(2){
     stroke-dashoffset: calc(440 - (440 * 88)/100);
@@ -429,6 +429,14 @@ svg circle:nth-child(2){
 .card:nth-child(5) svg circle:nth-child(2){
     stroke-dashoffset: calc(440 - (440 * 78)/100);
     stroke: rgb(255, 251, 21)
+}
+.progress-animation{
+    animation: progress;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes progress {
+    0%{stroke-dashoffset: 440;}
 }
 .skills h3{
     position: relative;
@@ -555,7 +563,7 @@ svg circle:nth-child(2){
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 4rem auto; 
+    margin: 2rem 1.8rem; 
     transition: 0.5s;
 }
 .projects .content{
@@ -653,6 +661,8 @@ svg circle:nth-child(2){
 }
 .projects .box .content .text-content h2{
     font-size: 1.8em;
+    font-family: 'Roboto-Light';
+    font-weight: 600;
     color: #fff; 
     margin-bottom: 10px;
     transition: 0.5s;
@@ -750,4 +760,11 @@ footer p{
     font-weight: 600;
     letter-spacing: 3px;
     color:rgb(9, 20, 56);
+}
+/*________________________________________________ ANIMATION ______________________________________*/
+#image, #text{
+    opacity: 0;
+}
+#image.animated, #text.animated{
+    opacity: 1;
 }

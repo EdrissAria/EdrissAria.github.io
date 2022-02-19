@@ -19,7 +19,7 @@
 <body>
     <!--------------- Main Header ------------------->
     <header id="home">
-        <nav class="sticky">
+        <nav>
             <div class="brand"><img src="images/logo.png" alt="logo" class="logo"></div>
             <ul class="main-nav">
                 <li class="nav-item"><a href="#home">
@@ -71,14 +71,14 @@
 
     <!--------------- Main ------------------->
     <!-- ABOUT SECTION -->
-    <section class="about px-20 py-6" id="about">
+    <section class="about" id="about">
         <div class="container">
             <h1 class="title">about</h1>
             <div class="about-text row">
-                <div class="col span-3-of-12">
+                <div class="col span-3-of-12" id="image">
                     <img src="images/bishak.png" alt="profile" class="my-image" />
                 </div>
-                <div class="col span-9-of-12">
+                <div class="col span-9-of-12" id="text">
                     <h3>
                         Hello world, Im <span class="myname">M.Edriss Aria</span>
                         web designer & web developer
@@ -99,7 +99,7 @@
     <!-- ABOUT SECTION -->
 
     <!-- SKILLS SECTION -->
-    <section class="skills px-20 py-6" id="skills">
+    <section class="skills" id="skills">
         <div class="container">
             <h1 class="title">Skills</h1>
             <div class="about-text row">
@@ -108,7 +108,7 @@
                         <div class="percent">
                             <svg>
                                 <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70" id="progress"></circle>
                             </svg>
                             <div class="number">
                                 <h2>92<span>%</span></h2>
@@ -122,7 +122,7 @@
                         <div class="percent">
                             <svg>
                                 <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70" id="progress"></circle>
                             </svg>
                             <div class="number">
                                 <h2>88<span>%</span></h2>
@@ -136,7 +136,7 @@
                         <div class="percent">
                             <svg>
                                 <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70" id="progress"></circle>
                             </svg>
                             <div class="number">
                                 <h2>82<span>%</span></h2>
@@ -150,7 +150,7 @@
                         <div class="percent">
                             <svg>
                                 <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70" id="progress"></circle>
                             </svg>
                             <div class="number">
                                 <h2>80<span>%</span></h2>
@@ -164,7 +164,7 @@
                         <div class="percent">
                             <svg>
                                 <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70" id="progress"></circle>
                             </svg>
                             <div class="number">
                                 <h2>78<span>%</span></h2>
@@ -269,78 +269,88 @@
     <!-- SKILLS SECTION -->
 
     <!-- PROJECTS SECTION -->
-    <section class="projects px-20 py-6" id="projects">
-        <h1 class="title">Projects</h1>
-        <div class="row">
-            <div class="box col span-3-of-12">
-                <span></span>
-                <div class="content">
-                    <img src="./images/adventure.png" alt="afgcode">
-                    <div class="text-content">
-                        <h2>AfgCode</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam non ipsum eum ipsam dolore!
-                            Consectetur minima</p>
-                        <a href="">Go To It &RightArrow;</a>
+    <section class="projects" id="projects">
+        <div class="container">
+            <h1 class="title">Projects</h1>
+            <div class="row">
+                <div class="box col span-3-of-12">
+                    <span></span>
+                    <div class="content">
+                        <img src="./images/adventure.png" alt="afgcode">
+                        <div class="text-content">
+                            <h2>AfgCode</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam non ipsum eum ipsam
+                                dolore!
+                                Consectetur minima</p>
+                            <a href="">Go To It &RightArrow;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box col span-3-of-12">
+                    <span></span>
+                    <div class="content">
+                        <img src="./images/adventure.png" alt="afgcode">
+                        <div class="text-content">
+                            <h2>AfgCode</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam non ipsum eum ipsam
+                                dolore!
+                                Consectetur minima</p>
+                            <a href="">Go To It &RightArrow;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box col span-3-of-12">
+                    <span></span>
+                    <div class="content">
+                        <img src="./images/adventure.png" alt="afgcode">
+                        <div class="text-content">
+                            <h2>AfgCode</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam non ipsum eum ipsam
+                                dolore!
+                                Consectetur minima</p>
+                            <a href="">Go To It &RightArrow;</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="box col span-3-of-12">
-                <span></span>
-                <div class="content">
-                    <img src="./images/adventure.png" alt="afgcode">
-                    <div class="text-content">
-                        <h2>AfgCode</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam non ipsum eum ipsam dolore!
-                            Consectetur minima</p>
-                        <a href="">Go To It &RightArrow;</a>
+            <div class="row">
+                <div class="box col span-3-of-12">
+                    <span></span>
+                    <div class="content">
+                        <img src="./images/adventure.png" alt="afgcode">
+                        <div class="text-content">
+                            <h2>AfgCode</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam non ipsum eum ipsam
+                                dolore!
+                                Consectetur minima</p>
+                            <a href="">Go To It &RightArrow;</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="box col span-3-of-12">
-                <span></span>
-                <div class="content">
-                    <img src="./images/adventure.png" alt="afgcode">
-                    <div class="text-content">
-                        <h2>AfgCode</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam non ipsum eum ipsam dolore!
-                            Consectetur minima</p>
-                        <a href="">Go To It &RightArrow;</a>
+                <div class="box col span-3-of-12">
+                    <span></span>
+                    <div class="content">
+                        <img src="./images/adventure.png" alt="afgcode">
+                        <div class="text-content">
+                            <h2>AfgCode</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam non ipsum eum ipsam
+                                dolore!
+                                Consectetur minima</p>
+                            <a href="">Go To It &RightArrow;</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="box col-span-1">
-                <span></span>
-                <div class="content">
-                    <img src="./images/adventure.png" alt="afgcode">
-                    <div class="text-content">
-                        <h2>AfgCode</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam non ipsum eum ipsam dolore!
-                            Consectetur minima</p>
-                        <a href="">Go To It &RightArrow;</a>
-                    </div>
-                </div>
-            </div>
-            <div class="box col-span-1">
-                <span></span>
-                <div class="content">
-                    <img src="./images/adventure.png" alt="afgcode">
-                    <div class="text-content">
-                        <h2>AfgCode</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam non ipsum eum ipsam dolore!
-                            Consectetur minima</p>
-                        <a href="">Go To It &RightArrow;</a>
-                    </div>
-                </div>
-            </div>
-            <div class="box col-span-1">
-                <span></span>
-                <div class="content">
-                    <img src="./images/adventure.png" alt="afgcode">
-                    <div class="text-content">
-                        <h2>AfgCode</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam non ipsum eum ipsam dolore!
-                            Consectetur minima</p>
-                        <a href="">Go To It &RightArrow;</a>
+                <div class="box col span-3-of-12">
+                    <span></span>
+                    <div class="content">
+                        <img src="./images/adventure.png" alt="afgcode">
+                        <div class="text-content">
+                            <h2>AfgCode</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam non ipsum eum ipsam
+                                dolore!
+                                Consectetur minima</p>
+                            <a href="">Go To It &RightArrow;</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -370,10 +380,8 @@
     </footer>
     <!--------------- Footer ------------------->
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/jQuery.js"></script>
     <script src="assets/js/jquery.waypoints.min.js"></script>
-    <!-- <script src="assets/js/tcss.js"></script> -->
     <script src="assets/js/index.js"></script>
 </body>
 
