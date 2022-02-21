@@ -242,6 +242,7 @@ Copyright (c) 2015 Daniel Eden
 .rubberBand {
   -webkit-animation-name: rubberBand;
   animation-name: rubberBand;
+  animation-duration: 1s;
 }
 
 @-webkit-keyframes shake {

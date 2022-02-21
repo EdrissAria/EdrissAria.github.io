@@ -37,8 +37,38 @@ $(document).ready(function () {
     });
 
     // for skills progress
-     $('#skills').waypoint(function (direction) {
-        $('#progress').addClass('.progress-animation'); 
+    $('#skills').waypoint(function (direction) {
+        $('.card').addClass('animated zoomIn'); 
+    }, {
+        offset: '60%'
+    });
+
+    // for skills frameworks
+    $('#frameworks').waypoint(function (direction) {
+        $('.progress').addClass('framework-progress'); 
+    }, {
+        offset: '60%'
+    });
+
+    // for skills others
+    $('#others').waypoint(function (direction) {
+        $('.progress').addClass('framework-progress'); 
+    }, {
+        offset: '60%'
+    });
+
+    // for projects
+    $('#projects').waypoint(function (direction) {
+        $('.box').addClass('animated rubberBand'); 
+    }, {
+        offset: '50%'
+    });
+
+    // for projects
+    $('#contact').waypoint(function (direction) {
+        $('.social').addClass('animated slideInUp'); 
+    }, {
+        offset: '65%'
     });
 
 });

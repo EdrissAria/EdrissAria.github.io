@@ -428,12 +428,13 @@ svg circle:nth-child(2){
 }
 .card:nth-child(5) svg circle:nth-child(2){
     stroke-dashoffset: calc(440 - (440 * 78)/100);
-    stroke: rgb(255, 251, 21)
+    stroke: rgb(255, 251, 21);
 }
 .progress-animation{
     animation: progress;
     animation-duration: 2s;
     animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 @keyframes progress {
     0%{stroke-dashoffset: 440;}
@@ -519,8 +520,9 @@ svg circle:nth-child(2){
     border-radius: 10px;
     background-color: #fff;
     box-shadow: inset 0 0 2px #000;
+}
+.framework-progress{
     animation: animate 2s ease-in-out forwards; 
-
 }
 @keyframes animate {
     from {width: 0;}
