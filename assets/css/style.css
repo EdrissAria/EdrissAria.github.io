@@ -558,10 +558,17 @@ svg circle:nth-child(2){
     background: linear-gradient(45deg, #c3cbcc, #673ab7);
 }
 /*________________________________________________ PROJECTS ______________________________________*/
+.row{
+    display: flex;
+    justify-content: center;
+}
+.projects{
+    display: 'flex'; 
+    justify-content: center;
+}
 .projects .box{
     position: relative;
     width: 360px;
-    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -682,6 +689,10 @@ svg circle:nth-child(2){
     font-family: 'Roboto-Light'; 
     line-height: 1.2em;
     margin-bottom: 0.4rem;
+}
+.projects .box .content p{
+    font-size: 1em;
+    line-height: 1.1em;  
 }
 /*________________________________________________ CONTACT ______________________________________*/
 .contact{

@@ -59,7 +59,7 @@ $(document).ready(function () {
 
     // for projects
     $('#projects').waypoint(function (direction) {
-        $('.box').addClass('animated rubberBand'); 
+        $('.box').addClass('animated pulse'); 
     }, {
         offset: '50%'
     });
