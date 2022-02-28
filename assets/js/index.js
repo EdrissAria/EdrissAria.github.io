@@ -12,6 +12,30 @@ $(document).ready(function () {
         offset: '60px;'
     });
 
+    /*--- Sticky Toggle Menu ---*/
+    $('#about').waypoint(function (direction) {
+        if (direction == "down") {
+            $('.toggle_menu').addClass('sticky_toggle');
+        } else {
+            $('.toggle_menu').removeClass('sticky_toggle');
+        }
+    }, {
+        offset: '60px;'
+    });
+
+    /*--- menu toggle ---*/
+    let menuToggle = document.querySelector('.menu'); 
+    let stickyToggle = document.querySelector('.toggle_menu'); 
+    menuToggle.onclick = function(){
+        menuToggle.classList.toggle('active');
+        if(stickyToggle.style.display == 'block'){
+            $('.toggle_menu').css('display', 'none'); 
+        }else{
+            $('.toggle_menu').css('display', 'block'); 
+        }
+        
+    }
+
     /*--- navigation scroll ---*/
     $(function () {
         $('a[href*=#]:not([href=#])').click(function () {

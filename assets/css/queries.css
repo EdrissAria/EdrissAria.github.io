@@ -97,7 +97,45 @@
 
 /* small tablet to big tablet : from 768 to 1023px */
 @media only screen and (max-width: 1023px){
-    
+    .main-nav{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .about-text h3{
+        font-size: 1.5rem;
+    }
+    .about-text p{
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        letter-spacing: 1px;
+    }
+    .card{
+        width: 200px;
+        height: 200px;
+    }
+    .percent .number h2{
+        font-size: 36px;
+    }
+    .text {
+        top: 0.6rem;     
+        font-size: 18px;
+    }
+    .projects .box{
+        width: 280px;
+        margin: 2rem 1rem; 
+    }
+    .projects .box .content{
+        width: 300px;
+    }
+    .projects .box .content .text-content h2{
+        font-size: 1.4em;
+    }
+    .projects .box .content .text-content a{
+        font-size: 1.1rem;
+    }
+     
 }
 
 /* small phone to small tablets : form 481px to 767px */
