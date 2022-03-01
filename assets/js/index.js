@@ -9,7 +9,7 @@ $(document).ready(function () {
             $('nav').removeClass('sticky');
         }
     }, {
-        offset: '60px;'
+        offset: '74px;'
     });
 
     /*--- Sticky Toggle Menu ---*/
@@ -20,7 +20,7 @@ $(document).ready(function () {
             $('.toggle_menu').removeClass('sticky_toggle');
         }
     }, {
-        offset: '60px;'
+        offset: '74px;'
     });
 
     /*--- menu toggle ---*/
@@ -28,12 +28,7 @@ $(document).ready(function () {
     let stickyToggle = document.querySelector('.toggle_menu'); 
     menuToggle.onclick = function(){
         menuToggle.classList.toggle('active');
-        if(stickyToggle.style.display == 'block'){
-            $('.toggle_menu').css('display', 'none'); 
-        }else{
-            $('.toggle_menu').css('display', 'block'); 
-        }
-        
+        stickyToggle.classList.toggle('active'); 
     }
 
     /*--- navigation scroll ---*/
