@@ -173,11 +173,11 @@
 
 /* small phone to small tablets : form 481px to 767px */
 @media only screen and (max-width: 767px){
-    .text-container .image{
-        width: 50%;
+    .text-container img{
+        width: 100%;
         border-radius: 50%;
-        overflow: hidden;
     }
+     
     .text-container .biography{
         width: 90%;
         margin-top: 1rem;
