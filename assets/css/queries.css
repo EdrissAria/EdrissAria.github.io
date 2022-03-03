@@ -1,5 +1,11 @@
 /* big laptops to 1200px (widths smaller than the 1600px row) */
 @media only screen and (max-width: 1599px){
+    .text-container .image{
+        width: 28%;
+    }
+    .text-container .biography{
+        width: 72%;
+    }
     .title{
         font-size: 32pt;
     }
@@ -15,33 +21,38 @@
         letter-spacing: 1.1px;
     }
     .card{
-        width: 200px;
-        height: 250px;
+        width: 19%;
+        height: 240px;
     }
     .projects .box{
-        width: 360px;
-        margin: 2rem 1.4rem; 
+        width: 28%; 
     }
 }
 
 /* big tablet to 1200px (widths smaller than the 1140px row) */
 @media only screen and (max-width: 1399px){
+    .text-container .image{
+        width: 28%;
+    }
+    .text-container .biography{
+        width: 70%;
+    }
     .title{
         font-size: 30pt;
     }
     .title::after{
         width: 200px;
     }
-    .about-text h3{
+    .text-container h3{
         font-size: 1.8rem;
     }
-    .about-text p{
-        font-size: 1rem;
-        line-height: 1.6rem;
+    .text-container p{
+        font-size: 1.2rem;
+        line-height: 1.8rem;
         letter-spacing: 1px;
     }
     .card{
-        width: 200px;
+        width: 19%;
         height: 220px;
     }
     .projects .box{
@@ -59,18 +70,18 @@
     }
 }
 
-/* big tablet to 1200px (widths smaller than the 1140px row) */
+/* big tablet to 1200px (widths smaller than the 1200px row) */
 @media only screen and (max-width: 1199px){
-    .about-text h3{
-        font-size: 1.5rem;
+    .text-container h3{
+        font-size: 1.6rem;
     }
-    .about-text p{
-        font-size: 0.9rem;
+    .text-container p{
+        font-size: 1rem;
         line-height: 1.4rem;
         letter-spacing: 1px;
     }
     .card{
-        width: 200px;
+        width: 19%;
         height: 200px;
     }
     .percent .number h2{
@@ -103,23 +114,39 @@
     .menu{
         display: block;
     }
+    .text-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .text-container .image{
+        width: 50%;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .text-container .biography{
+        width: 80%;
+        margin-top: 1rem;
+    }
     .master-text{
-        font-size: 36pt; 
+        font-size: 30pt; 
     }
-    .col{
-        width: 100%;
+    .text-container h3{
+        font-size: 1.6rem;
     }
-    .about-text h3{
-        font-size: 1.3rem;
-    }
-    .about-text p{
-        font-size: 0.8rem;
-        line-height: 1.4rem;
+    .text-container p{
+        font-size: 1rem;
+        line-height: 1.6rem;
         letter-spacing: 1px;
     }
+    .skill-container{
+        flex-direction: column;
+    }
     .card{
-        width: 200px;
+        width: 90%;
         height: 200px;
+        margin-top: 1.4rem;
     }
     .percent .number h2{
         font-size: 36px;
@@ -146,8 +173,51 @@
 
 /* small phone to small tablets : form 481px to 767px */
 @media only screen and (max-width: 767px){
+    .text-container .image{
+        width: 50%;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .text-container .biography{
+        width: 90%;
+        margin-top: 1rem;
+    }
     .master-text{
-        color: red; 
+        font-size: 22pt; 
+    }
+    .title{
+        font-size: 30pt;
+    }
+    .text-container h3{
+        font-size: 1.4rem;
+    }
+    .text-container p{
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        letter-spacing: 1px;
+    }
+    .skills .name{
+        width: 100px;
+        font-size: 0.8rem;
+        text-align: left;
+    }
+    .project-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-container .box{
+        width: 100%;
+    }
+    .social ul li{
+        margin: 10px;
+    }
+    .social ul li a{
+        width: 60px;
+        height: 60px;
+        font-size: 1.8em;
+         
     }
 }
 

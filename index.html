@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="fonts/css/all.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <!-- styles -->
-    <link rel="stylesheet" href="assets/css/grid.css">
+    <!-- <link rel="stylesheet" href="assets/css/grid.css"> -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/queries.css">
 </head>
@@ -120,11 +120,11 @@
     <section class="about" id="about">
         <div class="container">
             <h1 class="title">about</h1>
-            <div class="about-text row">
-                <div class="col span-3-of-12" id="image">
+            <div class="text-container">
+                <div class="image" id="image">
                     <img src="images/bishak.png" alt="profile" class="my-image" />
                 </div>
-                <div class="col span-9-of-12" id="text">
+                <div class="biography" id="text">
                     <h3>
                         Hello world, Im <span class="myname">M.Edriss Aria</span>
                         web designer & web developer
@@ -147,8 +147,8 @@
     <section class="skills" id="skills">
         <div class="container">
             <h1 class="title">Skills</h1>
-            <div class="about-text row">
-                <div class="card col span-2-of-12">
+            <div class="skill-container">
+                <div class="card">
                     <div class="box">
                         <div class="percent">
                             <svg>
@@ -220,64 +220,64 @@
                 </div>
             </div>
             <h3>Frameworks</h3>
-            <div class="grid grid-cols-2 gap-4 mt-8" id="frameworks">
-                <div class="frame col-span-1">
+            <div id="frameworks">
+                <div class="frame">
                     <span class="name">bootstrap</span>
                     <div class="percentage">
                         <div class="progress" style="width: 92%" id="frame"></div>
                     </div>
                     <span class="value">92%</span>
                 </div>
-                <div class="frame col-span-1">
+                <div class="frame">
                     <span class="name">tailwindcss</span>
                     <div class="percentage">
                         <div class="progress" style="width: 83%" id="frame"></div>
                     </div>
                     <span class="value">83%</span>
                 </div>
-                <div class="frame col-span-1">
+                <div class="frame">
                     <span class="name">jquery</span>
                     <div class="percentage">
                         <div class="progress" style="width: 80%" id="frame"></div>
                     </div>
                     <span class="value">80%</span>
                 </div>
-                <div class="frame col-span-1">
+                <div class="frame">
                     <span class="name">reactjs</span>
                     <div class="percentage">
                         <div class="progress" style="width: 86%" id="frame"></div>
                     </div>
                     <span class="value">86%</span>
                 </div>
-                <div class="frame col-span-1">
+                <div class="frame">
                     <span class="name">reactnative</span>
                     <div class="percentage">
                         <div class="progress" style="width: 78%" id="frame"></div>
                     </div>
                     <span class="value">78%</span>
                 </div>
-                <div class="frame col-span-1">
+                <div class="frame">
                     <span class="name">nextjs</span>
                     <div class="percentage">
                         <div class="progress" style="width: 81%" id="frame"></div>
                     </div>
                     <span class="value">81%</span>
                 </div>
-                <div class="frame col-span-1">
+                <div class="frame">
                     <span class="name">svelte</span>
                     <div class="percentage">
                         <div class="progress" style="width: 77%" id="frame"></div>
                     </div>
                     <span class="value">77%</span>
                 </div>
-                <div class="frame col-span-1">
+                <div class="frame">
                     <span class="name">sveltekit</span>
                     <div class="percentage">
                         <div class="progress" style="width: 65%" id="frame"></div>
                     </div>
                     <span class="value">65%</span>
                 </div>
-                <div class="frame col-span-1">
+                <div class="frame">
                     <span class="name">laravel</span>
                     <div class="percentage">
                         <div class="progress" style="width: 89%" id="frame"></div>
@@ -287,21 +287,21 @@
             </div>
             <h3>Other skills</h3>
             <div class="grid grid-cols-2 gap-4 mt-8" id="others">
-                <div class="frame col-span-1">
+                <div class="frame">
                     <span class="name">mysql</span>
                     <div class="percentage">
                         <div class="progress" style="width: 90%"></div>
                     </div>
                     <span class="value">90%</span>
                 </div>
-                <div class="frame col-span-1">
+                <div class="frame">
                     <span class="name">wordpress</span>
                     <div class="percentage">
                         <div class="progress" style="width: 87%"></div>
                     </div>
                     <span class="value">87%</span>
                 </div>
-                <div class="frame col-span-1">
+                <div class="frame">
                     <span class="name">git&github</span>
                     <div class="percentage">
                         <div class="progress" style="width: 86%"></div>
@@ -317,8 +317,8 @@
     <section class="projects" id="projects">
         <div class="container">
             <h1 class="title">Projects</h1>
-            <div class="row">
-                <div class="box col span-3-of-12">
+            <div class="project-container">
+                <div class="box">
                     <span></span>
                     <div class="content">
                         <img src="./images/adventure.png" alt="afgcode">
@@ -331,7 +331,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box col span-3-of-12">
+                <div class="box">
                     <span></span>
                     <div class="content">
                         <img src="./images/adventure.png" alt="afgcode">
@@ -344,7 +344,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box col span-3-of-12">
+                <div class="box">
                     <span></span>
                     <div class="content">
                         <img src="./images/adventure.png" alt="afgcode">
@@ -358,8 +358,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="box col span-3-of-12">
+            <div class="project-container">
+                <div class="box">
                     <span></span>
                     <div class="content">
                         <img src="./images/adventure.png" alt="afgcode">
@@ -372,7 +372,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box col span-3-of-12">
+                <div class="box">
                     <span></span>
                     <div class="content">
                         <img src="./images/adventure.png" alt="afgcode">
@@ -385,7 +385,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box col span-3-of-12">
+                <div class="box">
                     <span></span>
                     <div class="content">
                         <img src="./images/adventure.png" alt="afgcode">
