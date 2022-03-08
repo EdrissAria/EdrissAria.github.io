@@ -240,6 +240,23 @@
     footer p{
         font-size: 16px;
     }
+    .skills .frame{
+        padding: 10px 10px 10px;
+    }
+    .skills .name{
+        width: 100px;
+        font-size: 12px;
+    }
+    .skills .value{
+        width: 30px;  
+        font-size: 12px;
+    }
+    .skills .percentage{
+        height: 14px; 
+    }
+    .skills .percentage .progress{
+        width: 100px;
+    }
 }
 
 /* very small phones from 0 to 480px */
