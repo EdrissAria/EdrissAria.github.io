@@ -219,6 +219,12 @@
         font-size: 1.8em;
          
     }
+    .master-box{
+        width: 80%;
+    }
+    .container{
+        width: 90%; 
+    }
 }
 
 /* small phones from 0 to 480px */
@@ -256,6 +262,17 @@
     }
     .skills .percentage .progress{
         width: 100px;
+    }
+    .mystery{
+        font-size: 1rem; 
+        word-spacing: 2px; 
+    }
+    .skills h3{
+        font-size: 24pt;
+    }
+     
+    .skills h3::after{
+        width: 180px;
     }
 }
 

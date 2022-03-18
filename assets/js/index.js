@@ -25,10 +25,12 @@ $(document).ready(function () {
 
     /*--- menu toggle ---*/
     let menuToggle = document.querySelector('.menu'); 
-    let stickyToggle = document.querySelector('.toggle_menu'); 
+    let stickyToggle = document.querySelector('.toggle_menu');
+    let nav = document.querySelector('nav');  
     menuToggle.onclick = function(){
         menuToggle.classList.toggle('active');
-        stickyToggle.classList.toggle('active'); 
+        stickyToggle.classList.toggle('active');
+        nav.classList.toggle('active');  
     }
 
     /*--- navigation scroll ---*/
