@@ -42,6 +42,7 @@ header{
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
+    backdrop-filter: blur(16px);
 }
 nav {
     position: relative;
