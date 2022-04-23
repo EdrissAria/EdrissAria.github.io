@@ -43,6 +43,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(16px);
+    -moz-backdrop-filter: blur(16px);
 }
 nav {
     position: relative;
@@ -154,6 +155,7 @@ nav.active{
     width: 100%;
     background-color: rgba(18, 19, 39, 0.685);
     backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(16px);
     z-index: 9999;
 }
 
