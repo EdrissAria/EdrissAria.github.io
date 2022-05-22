@@ -42,8 +42,11 @@ header{
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
+<<<<<<< HEAD
     backdrop-filter: blur(16px);
     -moz-backdrop-filter: blur(16px);
+=======
+>>>>>>> f200c9b6a34170cfa297fbccbf82695244689994
 }
 nav {
     position: relative;
