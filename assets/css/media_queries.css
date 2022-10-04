@@ -1,0 +1,282 @@
+/* big laptops to 1200px (widths smaller than the 1600px row) */
+@media only screen and (max-width: 1599px){
+    .text-container .image{
+        width: 28%;
+    }
+    .text-container .biography{
+        width: 72%;
+    }
+    .title{
+        font-size: 32pt;
+    }
+    .title::after{
+        width: 200px;
+    }
+    .about-text h3{
+        font-size: 2.1rem;
+    }
+    .about-text p{
+        font-size: 1rem;
+        line-height: 2rem;
+        letter-spacing: 1.1px;
+    }
+    .card{
+        width: 19%;
+        height: 240px;
+    }
+    .projects .box{
+        width: 28%; 
+    }
+}
+
+/* big tablet to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1399px){
+    .text-container .image{
+        width: 28%;
+    }
+    .text-container .biography{
+        width: 70%;
+    }
+    .title{
+        font-size: 30pt;
+    }
+    .title::after{
+        width: 200px;
+    }
+    .text-container h3{
+        font-size: 1.8rem;
+    }
+    .text-container p{
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        letter-spacing: 1px;
+    }
+    .card{
+        width: 19%;
+        height: 220px;
+    }
+    .projects .box{
+        width: 300px;
+        margin: 2rem 1.4rem; 
+    }
+    .projects .box .content{
+        width: 300px;
+    }
+    .projects .box .content .text-content h2{
+        font-size: 1.4em;
+    }
+    .projects .box .content .text-content a{
+        font-size: 1.1rem;
+    }
+}
+
+/* big tablet to 1200px (widths smaller than the 1200px row) */
+@media only screen and (max-width: 1199px){
+    .text-container h3{
+        font-size: 1.6rem;
+    }
+    .text-container p{
+        font-size: 1rem;
+        line-height: 1.4rem;
+        letter-spacing: 1px;
+    }
+    .card{
+        width: 19%;
+        height: 200px;
+    }
+    .percent .number h2{
+        font-size: 36px;
+    }
+    .text {
+        top: 0.6rem;     
+        font-size: 18px;
+    }
+    .projects .box{
+        width: 280px;
+        margin: 2rem 1rem; 
+    }
+    .projects .box .content{
+        width: 300px;
+    }
+    .projects .box .content .text-content h2{
+        font-size: 1.4em;
+    }
+    .projects .box .content .text-content a{
+        font-size: 1.1rem;
+    }
+}
+
+/* small tablet to big tablet : from 768 to 1023px */
+@media only screen and (max-width: 1023px){
+    .main-nav{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .text-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .text-container .image{
+        width: 50%;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .text-container .biography{
+        width: 80%;
+        margin-top: 1rem;
+    }
+    .master-text{
+        font-size: 30pt; 
+    }
+    .text-container h3{
+        font-size: 1.6rem;
+    }
+    .text-container p{
+        font-size: 1rem;
+        line-height: 1.6rem;
+        letter-spacing: 1px;
+    }
+    .skill-container{
+        flex-direction: column;
+    }
+    .card{
+        width: 90%;
+        height: 200px;
+        margin-top: 1.4rem;
+    }
+    .percent .number h2{
+        font-size: 36px;
+    }
+    .text {
+        top: 0.6rem;     
+        font-size: 18px;
+    }
+    .projects .box{
+        width: 280px;
+        margin: 2rem 1rem; 
+    }
+    .projects .box .content{
+        width: 300px;
+    }
+    .projects .box .content .text-content h2{
+        font-size: 1.4em;
+    }
+    .projects .box .content .text-content a{
+        font-size: 1.1rem;
+    }
+     
+}
+
+/* small phone to small tablets : form 481px to 767px */
+@media only screen and (max-width: 767px){
+    .text-container img{
+        width: 100%;
+        border-radius: 50%;
+    }
+     
+    .text-container .biography{
+        width: 90%;
+        margin-top: 1rem;
+    }
+    .master-text{
+        font-size: 22pt; 
+    }
+    .title{
+        font-size: 30pt;
+    }
+    .text-container h3{
+        font-size: 1.4rem;
+    }
+    .text-container p{
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        letter-spacing: 1px;
+    }
+    .skills .name{
+        width: 100px;
+        font-size: 0.8rem;
+        text-align: left;
+    }
+    .project-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-container .box{
+        width: 100%;
+    }
+    .social ul li{
+        margin: 10px;
+    }
+    .social ul li a{
+        width: 60px;
+        height: 60px;
+        font-size: 1.8em;
+         
+    }
+    .master-box{
+        width: 80%;
+    }
+    .container{
+        width: 90%; 
+    }
+}
+
+/* small phones from 0 to 480px */
+@media only screen and (max-width: 423px){
+    .master-box{
+        top: 60%;
+    }
+    .master-text{
+        font-size: 20pt; 
+    }
+    .social ul li{
+        margin: 8px;
+    }
+    .social ul li a{
+        width: 50px;
+        height: 50px;
+        font-size: 1.2em;
+    }
+    footer p{
+        font-size: 16px;
+    }
+    .skills .frame{
+        padding: 10px 10px 10px;
+    }
+    .skills .name{
+        width: 100px;
+        font-size: 12px;
+    }
+    .skills .value{
+        width: 30px;  
+        font-size: 12px;
+    }
+    .skills .percentage{
+        height: 14px; 
+    }
+    .skills .percentage .progress{
+        width: 100px;
+    }
+    .mystery{
+        font-size: 1rem; 
+        word-spacing: 2px; 
+    }
+    .skills h3{
+        font-size: 24pt;
+    }
+     
+    .skills h3::after{
+        width: 180px;
+    }
+}
+
+/* very small phones from 0 to 480px */
+@media only screen and (max-width: 319px){
+
+}
