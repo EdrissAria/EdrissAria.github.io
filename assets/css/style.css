@@ -798,7 +798,8 @@ svg circle:nth-child(2){
 .projects .box .content img{
     width: 100%;
     height: 200px;
-    border-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 .projects .box .content .text-content{
     width: 100%;
